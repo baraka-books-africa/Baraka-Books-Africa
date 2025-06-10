@@ -1,152 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baraka Books Africa</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #004225, #DAA520);
-      color: #fff;
+      padding: 0;
+      background-color: #fefaf3;
+      color: #3b2f2f;
     }
+
     header {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
+      background-color: #fff7e8;
+      border-bottom: 3px solid #3b2f2f;
     }
-    header img.logo {
+
+    .logo {
       width: 120px;
+      height: auto;
       margin-bottom: 1rem;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0.5rem 0;
+
+    h1 {
+      margin: 0.2rem 0;
+      font-size: 2.5rem;
     }
-    header p {
+
+    p {
       font-size: 1.2rem;
-      font-style: italic;
+      color: #5a4c4c;
     }
+
     .cta {
-      text-align: center;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
-    .cta button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
+
+    .cta-button {
+      background-color: #355e3b;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
-      color: #004225;
-      background-color: #fff;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    .cta button:hover {
-      background-color: #f0f0f0;
+
+    .cta-button:hover {
+      background-color: #2a472e;
     }
+
     .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 3rem;
-      background-color: rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
     }
+
     .feature {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
-      border-radius: 15px;
+      background-color: #fff;
+      border: 1px solid #e5dccc;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 600px;
       text-align: center;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
     }
+
     .feature:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-5px);
     }
-    .feature h3 {
-      color: #FFD700;
-      margin-bottom: 1rem;
-      cursor: pointer;
-    }
-    a.feature-link {
-      color: #fff;
-      text-decoration: none;
-    }
-    a.feature-link:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #00331a;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    nav.links {
+
+    .feature a {
+      display: inline-block;
       margin-top: 1rem;
-    }
-    nav.links a {
-      color: #FFD700;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav.links a:hover {
+      color: #355e3b;
       text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background-color: #fff7e8;
+      color: #6a5a5a;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="logo.png" alt="Baraka Books Africa Logo" class="logo">
+    <img src="/mnt/data/ChatGPT Image Jun 10, 2025, 03_58_20 PM.png" alt="Baraka Books Africa Logo" class="logo">
     <h1>Baraka Books Africa</h1>
     <p>Blessed Ideas. Bold Money Moves.</p>
     <div class="cta">
-      <a href="https://your-bookstore-link.com"><button>Explore Our Ebooks</button></a>
+      <a href="bookstore.html" class="cta-button">Explore Our Ebooks</a>
     </div>
-    <nav class="links">
-      <a href="#features">Features</a>
-      <a href="#subscribe">Subscribe</a>
-    </nav>
   </header>
 
-  <section class="features" id="features">
-    <a href="/wealth-guides.html" class="feature-link">
-      <div class="feature">
-        <h3>Wealth Building Guides</h3>
-        <p>Expert insights tailored for African audiences to create generational wealth through smart strategies.</p>
-      </div>
-    </a>
-    <a href="/financial-literacy.html" class="feature-link">
-      <div class="feature">
-        <h3>Financial Literacy</h3>
-        <p>Understand money better with simple, practical ebooks that speak your language and reflect your reality.</p>
-      </div>
-    </a>
-    <a href="/entrepreneurial-moves.html" class="feature-link">
-      <div class="feature">
-        <h3>Bold Entrepreneurial Moves</h3>
-        <p>Learn how to launch, grow, and scale businesses with courage and vision drawn from Africa's spirit.</p>
-      </div>
-    </a>
-  </section>
+  <section class="features">
+    <div class="feature">
+      <h2>Wealth Building Guides</h2>
+      <p>Discover practical steps to grow your wealth and create financial freedom, tailored for African entrepreneurs.</p>
+      <a href="wealth-guides.html">Learn More</a>
+    </div>
 
-  <section id="subscribe">
-    <div id="mc_embed_signup">
-      <form action="https://github.us6.list-manage.com/subscribe/post?u=d77aaa0515dbe73debcdecba6&amp;id=2f73f0b4a3&amp;f_id=0015c0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <h2 style="color:#1a1a1a">📚 Join Baraka Books Africa</h2>
-        <p style="color:#333">Get financial wisdom, free ebooks, and inspiring African stories—delivered monthly.</p>
-        <div class="mc-field-group">
-          <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-          <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
-        </div>
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_d77aaa0515dbe73debcdecba6_2f73f0b4a3" tabindex="-1" value="">
-        </div>
-        <div class="clear">
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-        </div>
-      </form>
+    <div class="feature">
+      <h2>Financial Literacy</h2>
+      <p>Master budgeting, saving, investing, and debt management with tools that speak your language and lifestyle.</p>
+      <a href="financial-literacy.html">Learn More</a>
+    </div>
+
+    <div class="feature">
+      <h2>Bold Entrepreneurial Moves</h2>
+      <p>Stories and strategies from bold Africans who turned ideas into impact — and profit.</p>
+      <a href="entrepreneurship.html">Learn More</a>
     </div>
   </section>
 
@@ -154,5 +130,5 @@
     &copy; 2025 Baraka Books Africa. All rights reserved.
   </footer>
 </body>
-</html>
 
+</html>
